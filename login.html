@@ -6,10 +6,15 @@
     <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+<script>
+    function showAlert() {
+      alert("This is an alert box!");
+    }
+    </script>
 <body>
     <div class="login-container">
         <h1>Login</h1>
-        <form action="/login" method="POST">
+        <form action="Dashboard.html" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
@@ -18,7 +23,13 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit" class="login-btn" >Login</button>
+            <button onclick="showAlert()" type="submit" class="login-btn" >Login</button>
+            <script>
+                function showAlert() {
+                  alert("Please enter username & password");
+                }
+              </script>
+
         </form>
         <div class="forgot-password">
             <a href="forgot-password.html">Forgot your password?</a>

@@ -4,18 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alert Box Example</title>
-  <script type="text/javascript">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alert Box Example</h1>
+  <p>Click the button below to see an alert box:</p>
+  <button onclick="showAlert()">Show Alert</button>
+
+  <script>
     function showAlert() {
       alert("This is an alert box!");
     }
   </script>
-</head>
-<body>
-
-  <h1>Welcome to the Alert Box Example</h1>
-  <p>Click the button below to see an alert box:</p>
-
-  <button onclick="showAlert()">Show Alert</button>
-
 </body>
 </html>
